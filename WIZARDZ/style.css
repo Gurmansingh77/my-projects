@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: white;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+nav h4 {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav button {
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: transparent;
+
+}
+
+.part2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.center {
+    padding: 45px 70px;
+    height: 60%;
+    width: 100%;
+    display: flex;
+}
+
+.centerpart1 {
+    height: 100%;
+    width: 40%;
+}
+
+.centerpart2 {
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+
+.centerpart1 h1 {
+    font-size: 70px;
+    line-height: 1;
+}
+
+.centerpart1 p {
+    font-size: 20px;
+    padding: 20px 0;
+    width: 90%;
+}
+
+.centerpart1 button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.centerpart2 img {
+    height: 100%;
+    position: absolute;
+    padding-left: 15%;
+}
+
+.section1bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+}
+
+.section1bottom img {
+    height: 80px;
+    cursor: pointer;
+}
+
+.section2 .services {
+    padding: 65px 70px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.services button,
+.services3 button {
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: #9AE975;
+    padding: 15px 20px;
+    font-size: 50px;
+}
+
+.services p,
+.services3 p {
+    width: 50%;
+    font-size: 15px;
+}
+
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 40px 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.elem {
+    padding: 10px;
+    flex-shrink: 0;
+    height: 35%;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 20px 0px black;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.elem-part2 img {
+    height: 100%;
+
+}
+
+.elem-part2 {
+    height: 100%;
+    width: 50%;
+}
+
+.elem-part1 h2 {
+    margin: 20px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: #9AE975;
+    font-weight: 500;
+    width: 65%;
+}
+
+.elem-part1 h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.elem-part1 i {
+    margin: 5px;
+    background-color: black;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+.elem-part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.black {
+    background-color: black;
+}
+
+.black h2 {
+    color: black;
+    background-color: white;
+}
+
+.black h4 {
+    color: white;
+}
+
+.black i {
+    background-color: white;
+    color: black;
+}
+
+.section3 {
+    margin-top: 300px;
+    margin-left: 100px;
+
+}
+
+.firstbox {
+    background-color: rgb(241, 238, 238);
+    height: 45%;
+    width: 88%;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    /* margin: 400px 100px; */
+}
+
+.firstbox .left {
+    height: 100%;
+    width: 50%;
+    margin-top: 45px;
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.firstbox .right {
+    height: 100%;
+    width: 50%;
+}
+
+.firstbox .right img {
+    height: 80%;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.firstbox .left h1 {
+    font-size: 50px;
+}
+
+.firstbox .left p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.firstbox .left button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 20px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.services3 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.services3 button,
+.services3 p , .side p {
+    margin: 0px 30px;
+}
+
+.lastbox {
+    background-color: black;
+    height: 25%;
+    width: 89%;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.side div{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.separator{
+    height: 50%;
+    border: 1px solid rgba(200, 198, 198, 0.463);
+    border-radius: 10px;
+}
