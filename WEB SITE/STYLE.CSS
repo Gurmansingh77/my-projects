@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: #fff;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 30px;
+    list-style: none;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    opacity: 0.9;
+}
+
+.heading {
+    padding-top: 70px;
+}
+
+.heading h1 {
+    font-size: 7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.6;
+    margin-left: 30px;
+    margin-bottom: -10px;
+}
+
+.secondh1 {
+    padding-left: 10vw;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 1.7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.6;
+    padding-left: 45%;
+    margin-top: 5px;
+}
+
+.heading h5{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.smallheadings h3 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.6;
+    font-size: 1vw;
+    margin-top: 5px;
+}
+
+.smallheadings {
+    margin-top: 35px;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.iconset {
+    display: flex;
+    align-items: center;
+
+}
+
+.iconset .circle {
+    margin: 2px;
+}
+
+.herofooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    padding: 25px;
+}
+
+.herofooter a {
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.second {
+    padding-right: 10vw;
+    padding-left: 4vw;
+    width: 100%;
+    background-color: black;
+    padding-top: 150px;
+}
+
+.elem {
+    width: 100%;
+    border: 1px solid #888;
+}
+
+h1 {
+    padding: 0.5vw 3vw;
+    font-size: 4vw;
+    color: #fff;
+    opacity: 0.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.parent {
+    padding: 30px;
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.secondh5 {
+    font-size: 1vw;
+    color: #fff;
+    opacity: 0.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.parent img {
+    top: 0;
+    left: 0;
+    height: 200%;
+    width: 40%;
+    opacity: 0;
+    z-index: 999;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.third {
+    width: 100%;
+    background-color: black;
+    padding-top: 300px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+}
+
+.image img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.text {
+    padding-top: 10px;
+    width: 40%;
+    font-size: 28px;
+    color: #fff;
+    /* opacity: 0.6; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    opacity: 0.6;
+    text-transform: capitalize;
+    font-size: medium;
+    padding: 5px;
+}
+
+.subscribe {
+    background-color: black;
+    width: 100%;
+    padding-top: 200px;
+    padding-left: 100px;
+    padding-bottom: 3vw;
+}
+
+.subscribe h6,
+h3 {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+
+}
+
+.subscribe h6 {
+    opacity: 0.6;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerleft {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 100px;
+}
+
+.footerleft li {
+    padding: 20px;
+}
+
+.footerright {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-right: 100px;
+}
+
+.footerright a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.minicircle {
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+
+}
+
+.boundingelem{
+    transform: translateY(100%);
+}
