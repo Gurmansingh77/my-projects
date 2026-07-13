@@ -367,6 +367,12 @@ nav button:first-child {
     /* align-items: center; */
     gap: 10px;
     border-radius: 20px;
+    
+}
+
+.maintrayboxes{
+    overflow-y: auto;
+    max-height: 60%;
 }
 
 .box .headline,
