@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: var(--font-family);
-    overflow: hidden;
+    /* overflow: hidden; */
     color: var(--color-);
 
 }
