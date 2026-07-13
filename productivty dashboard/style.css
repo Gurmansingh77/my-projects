@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: var(--font-family);
-    /* overflow: hidden; */
+    overflow: hidden;
     color: var(--color-);
 
 }
@@ -80,7 +80,7 @@ main {
 }
 
 header {
-    padding: 1.5rem 2rem;
+    padding:20px 30px;
 }
 
 nav {
@@ -116,13 +116,13 @@ nav button:first-child {
 
 .centersection {
     width: 100%;
-    height: 100%;
+    min-height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: clamp(15px, 3vh, 40px);
     align-items: center;
-    justify-content: center;
-    padding-bottom: 20%;
+    /* justify-content: center; */
+    padding: 20px;
 }
 
 .currenttime {
@@ -345,7 +345,6 @@ nav button:first-child {
 
 .aftertaskclickinterface {
     width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.897);
     position: absolute;
     display: flex;
@@ -353,6 +352,8 @@ nav button:first-child {
     justify-content: center;
     display: none;
     z-index: 1;
+    height:100vh;
+    overflow-y: auto;
 }
 
 .box {
@@ -484,7 +485,8 @@ nav button:first-child {
 }
 
 .afterplannerclickinterface {
-    height: 100%;
+    height:100vh;
+    overflow-y: auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.897);
     position: absolute;
@@ -648,7 +650,8 @@ nav button:first-child {
 }
 
 .aftergoalclickinterface {
-    height: 100%;
+    height:100vh;
+    overflow-y: auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.897);
     position: absolute;
@@ -747,7 +750,8 @@ nav button:first-child {
 
 
 .afterpomodoroclickinterface{
-     height: 100%;
+    height:100vh;
+    overflow-y: auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.897);
     position: absolute;
@@ -870,6 +874,28 @@ nav button:first-child {
         width:55px;
         height:55px;
         padding:10px;
+    }
+
+}
+
+@media (max-height:700px){
+
+    .centersection{
+        justify-content:flex-start;
+        padding-top:20px;
+        gap:15px;
+    }
+
+    .currenttime{
+        padding:15px;
+    }
+
+    .time h1{
+        font-size:clamp(3rem,8vw,5rem);
+    }
+
+    .trayitems{
+        padding:8px 15px;
     }
 
 }
