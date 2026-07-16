@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="loginregister.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <main>
+
+
+
+        <div class="registersection">
+            <div class="registerbox">
+                <div class="firstheading">
+                    <h1>Create Account</h1>
+                    <h3>Join FinTrack Pro</h3>
+                </div>
+
+                <form class="registerform" action="">
+                    <div class="forms">
+                        <label for="">Choose a Username</label>
+                        <input class="usenameinput" type="text" placeholder="" />
+                    </div>
+                    <div class="forms">
+                        <label for="">Email Adress</label>
+                        <input class="emailadressinput" type="text" placeholder="" />
+                    </div>
+                    <div class="forms">
+                        <label for="">Password</label>
+                        <input class="passwordinput" type="password" />
+                    </div>
+
+                    <button type="submit">Register</button>
+                </form>
+
+                <div class="last">
+                    <h3>Alredy have an account? <span class="loginherebtn">Login here</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="loginsection">
+            <div class="loginbox">
+                <div class="loginheading">
+                    <h1>Welcome Back</h1>
+                    <h3>Login to FinTrack Pro</h3>
+                </div>
+
+                <form class="loginform" action="">
+                    <div class="forms">
+                        <label for="">Username</label>
+                        <input class="loginusernameinput" type="text" placeholder="" />
+                    </div>
+                    <div class="forms">
+                        <label for="">Password</label>
+                        <input class="loginpassinput" class="login" type="password" />
+                    </div>
+
+                    <button type="submit">Register</button>
+                </form>
+
+                <div class="last">
+                    <h3>Don't have an account? <span>Register here</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainsection">
+
+
+
+            <div class="addtransactioninterface">
+                <div class="transactionbox">
+                    <div class="boxtop">
+                        <h2>Add Transaction</h2>
+                        <svg class="closebox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32"
+                            height="32" color="#cbcccc" fill="none" stroke="#cbcccc" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085"></path>
+                        </svg>
+                    </div>
+
+                    <div class="transactionform">
+                        <form class="formtrans" action="">
+
+                            <div class="type">
+                                <label for="type">Type</label>
+
+                                <select required id="type" name="type" class="expense">
+                                    <option value="expense">Expense</option>
+                                    <option value="income">Income</option>
+                                </select>
+                            </div>
+
+                            <div class="desc">
+                                <label for="">Description</label>
+                                <input required type="text" placeholder="e.g. Amazon,salary,coffee">
+                            </div>
+
+                            <div class="thirdsection">
+                                <div class="amount">
+                                    <label for="">Amount</label>
+                                    <input required type="number">
+                                </div>
+
+                                <div class="date">
+                                    <label for="">Date</label>
+                                    <input required type="date">
+                                </div>
+                            </div>
+
+                            <div class="forthsection">
+                                <label for="">Category</label>
+                                <select required id="type" name="type">
+                                    <option value="Food & dinning">Food & dinning</option>
+                                    <option value="shopping">shopping</option>
+                                    <option value="Recharge & bills">Recharge & bills</option>
+                                    <option value="Petrol & auto">Petrol & auto</option>
+                                    <option value="Salary">Salary</option>
+                                    <option value="others">others</option>
+                                </select>
+                            </div>
+
+                            <div class="savetransaction">
+                                <button class="save" type="submit">Save Transaction</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <header>
+
+                <div class="left">
+                    <aside>
+                        <div class="sitename">
+                            <div class="fintrachlogo">
+                                <img src="b15405eee193474c406893de5499d91f-removebg-preview.png" alt="" />
+                            </div>
+                            <div class="finname">
+                                <h2>FinTrack Pro</h2>
+                                <h3>Enterprise Finance</h3>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <button class="dashbtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                    color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M21 6.75C21 4.67893 19.3211 3 17.25 3C15.1789 3 13.5 4.67893 13.5 6.75C13.5 8.82107 15.1789 10.5 17.25 10.5C19.3211 10.5 21 8.82107 21 6.75Z">
+                                    </path>
+                                    <path
+                                        d="M10.5 6.75C10.5 4.67893 8.82107 3 6.75 3C4.67893 3 3 4.67893 3 6.75C3 8.82107 4.67893 10.5 6.75 10.5C8.82107 10.5 10.5 8.82107 10.5 6.75Z">
+                                    </path>
+                                    <path
+                                        d="M21 17.25C21 15.1789 19.3211 13.5 17.25 13.5C15.1789 13.5 13.5 15.1789 13.5 17.25C13.5 19.3211 15.1789 21 17.25 21C19.3211 21 21 19.3211 21 17.25Z">
+                                    </path>
+                                    <path
+                                        d="M10.5 17.25C10.5 15.1789 8.82107 13.5 6.75 13.5C4.67893 13.5 3 15.1789 3 17.25C3 19.3211 4.67893 21 6.75 21C8.82107 21 10.5 19.3211 10.5 17.25Z">
+                                    </path>
+                                </svg>
+
+                                Dashboard
+                            </button>
+                            <button class="alltransactionbtn">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                    color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4.5795 8.60699L2 8.45417C3.849 3.70488 9.15764 0.999849 14.3334 2.34477C19.8461 3.77722 23.1205 9.26153 21.647 14.5943C20.4283 19.0051 16.3433 21.9307 11.8479 22">
+                                    </path>
+                                    <path d="M12 22C6.5 22 2 17 2 11" stroke-dasharray="0.5 3"></path>
+                                    <path
+                                        d="M13.6039 9.72177C13.2524 9.35267 12.3906 8.48536 11.0292 9.10111C9.66784 9.71686 9.45159 11.698 11.5108 11.9085C12.4416 12.0036 13.0484 11.7981 13.6039 12.3794C14.1595 12.9607 14.2627 14.5774 12.8425 15.013C11.4222 15.4487 10.502 14.7292 10.2545 14.5041M11.9078 8.01953V8.81056M11.9078 15.1471V16.0195">
+                                    </path>
+                                </svg>
+
+                                All Transactions
+                            </button>
+                            <button class="settingbtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                    color="#000000" fill="none" stroke="currentColor" stroke-width="1">
+                                    <path
+                                        d="M21.3175 7.14139L20.8239 6.28479C20.4506 5.63696 20.264 5.31305 19.9464 5.18388C19.6288 5.05472 19.2696 5.15664 18.5513 5.36048L17.3311 5.70418C16.8725 5.80994 16.3913 5.74994 15.9726 5.53479L15.6357 5.34042C15.2766 5.11043 15.0004 4.77133 14.8475 4.37274L14.5136 3.37536C14.294 2.71534 14.1842 2.38533 13.9228 2.19657C13.6615 2.00781 13.3143 2.00781 12.6199 2.00781H11.5051C10.8108 2.00781 10.4636 2.00781 10.2022 2.19657C9.94085 2.38533 9.83106 2.71534 9.61149 3.37536L9.27753 4.37274C9.12465 4.77133 8.84845 5.11043 8.48937 5.34042L8.15249 5.53479C7.73374 5.74994 7.25259 5.80994 6.79398 5.70418L5.57375 5.36048C4.85541 5.15664 4.49625 5.05472 4.17867 5.18388C3.86109 5.31305 3.67445 5.63696 3.30115 6.28479L2.80757 7.14139C2.45766 7.74864 2.2827 8.05227 2.31666 8.37549C2.35061 8.69871 2.58483 8.95918 3.05326 9.48012L4.0843 10.6328C4.3363 10.9518 4.51521 11.5078 4.51521 12.0077C4.51521 12.5078 4.33636 13.0636 4.08433 13.3827L3.05326 14.5354C2.58483 15.0564 2.35062 15.3168 2.31666 15.6401C2.2827 15.9633 2.45766 16.2669 2.80757 16.8741L3.30114 17.7307C3.67443 18.3785 3.86109 18.7025 4.17867 18.8316C4.49625 18.9608 4.85542 18.8589 5.57377 18.655L6.79394 18.3113C7.25263 18.2055 7.73387 18.2656 8.15267 18.4808L8.4895 18.6752C8.84851 18.9052 9.12464 19.2442 9.2775 19.6428L9.61149 20.6403C9.83106 21.3003 9.94085 21.6303 10.2022 21.8191C10.4636 22.0078 10.8108 22.0078 11.5051 22.0078H12.6199C13.3143 22.0078 13.6615 22.0078 13.9228 21.8191C14.1842 21.6303 14.294 21.3003 14.5136 20.6403L14.8476 19.6428C15.0004 19.2442 15.2765 18.9052 15.6356 18.6752L15.9724 18.4808C16.3912 18.2656 16.8724 18.2055 17.3311 18.3113L18.5513 18.655C19.2696 18.8589 19.6288 18.9608 19.9464 18.8316C20.264 18.7025 20.4506 18.3785 20.8239 17.7307L21.3175 16.8741C21.6674 16.2669 21.8423 15.9633 21.8084 15.6401C21.7744 15.3168 21.5402 15.0564 21.0718 14.5354L20.0407 13.3827C19.7887 13.0636 19.6098 12.5078 19.6098 12.0077C19.6098 11.5078 19.7888 10.9518 20.0407 10.6328L21.0718 9.48012C21.5402 8.95918 21.7744 8.69871 21.8084 8.37549C21.8423 8.05227 21.6674 7.74864 21.3175 7.14139Z"
+                                        stroke-linecap="round"></path>
+                                    <path
+                                        d="M15.5195 12C15.5195 13.933 13.9525 15.5 12.0195 15.5C10.0865 15.5 8.51953 13.933 8.51953 12C8.51953 10.067 10.0865 8.5 12.0195 8.5C13.9525 8.5 15.5195 10.067 15.5195 12Z">
+                                    </path>
+                                </svg>
+
+                                Settings
+                            </button>
+
+                        </div>
+                        <div class="addtransaction">
+                            <button class="transactionbtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                    color="#ffffff" fill="#ffffff" stroke="#ffffff" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M12.001 20.0088C12.8289 20.0088 13.5 19.3377 13.5 18.5098V13.5068H18.502C19.3295 13.5068 20.0004 12.8363 20.001 12.0088C20.0015 11.1805 19.3302 10.5088 18.502 10.5088H13.5V5.50684C13.5 4.67933 12.8295 4.00835 12.002 4.00781C11.1737 4.00727 10.502 4.67857 10.502 5.50684V10.5088H5.49902C4.67114 10.5088 4 11.1799 4 12.0078C4 12.8357 4.67114 13.5068 5.49902 13.5068H10.502V18.5098C10.502 19.3377 11.1731 20.0088 12.001 20.0088Z">
+                                    </path>
+                                </svg>
+
+                                Add Transaction
+                            </button>
+                        </div>
+                    </aside>
+                </div>
+
+                <nav class="nav">
+                    <div class="right">
+                        <div class="username">gurman singh</div>
+                        <button class="logout">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                color="#000000" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M4.39267 4.00087C4 4.61597 4 5.41166 4 7.00304V16.997C4 18.5883 4 19.384 4.39267 19.9991C4.46279 20.109 4.5414 20.2132 4.62777 20.3108C5.11144 20.8572 5.87666 21.0758 7.4071 21.513C8.9414 21.9513 9.70856 22.1704 10.264 21.8417C10.3604 21.7847 10.45 21.7171 10.5313 21.6402C11 21.1965 11 20.3988 11 18.8034V5.19662C11 3.60122 11 2.80351 10.5313 2.35982C10.45 2.28288 10.3604 2.21527 10.264 2.15827C9.70856 1.82956 8.9414 2.0487 7.4071 2.48699C5.87666 2.92418 5.11144 3.14278 4.62777 3.68925C4.5414 3.78684 4.46279 3.89103 4.39267 4.00087Z">
+                                </path>
+                                <path
+                                    d="M11 4H13.0171C14.9188 4 15.8696 4 16.4604 4.58579C16.7898 4.91238 16.9355 5.34994 17 6M11 20H13.0171C14.9188 20 15.8696 20 16.4604 19.4142C16.7898 19.0876 16.9355 18.6501 17 18">
+                                </path>
+                                <path
+                                    d="M21 12H14M19.5 9.49994C19.5 9.49994 22 11.3412 22 12C22 12.6588 19.5 14.4999 19.5 14.4999">
+                                </path>
+                            </svg>
+
+                            Logout
+                        </button>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="centersection">
+
+
+
+                <nav>
+                    <div class="financialover">
+                        <h1>Financial Overview</h1>
+                        <h3>Real-time tracking application</h3>
+                    </div>
+                </nav>
+
+                <div class="datasection">
+                    <div class="datacards">
+                        <div class="card">
+                            <div class="svg banksvg" style="background-color: #DBEAFE;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28"
+                                    color="#1e40af" fill="none" stroke="#1e40af" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M12.125 5.75H12M12.25 5.75C12.25 5.88807 12.1381 6 12 6C11.8619 6 11.75 5.88807 11.75 5.75C11.75 5.61193 11.8619 5.5 12 5.5C12.1381 5.5 12.25 5.61193 12.25 5.75Z">
+                                    </path>
+                                    <path d="M5 9V19M9 9V19"></path>
+                                    <path d="M15 9V19M19 9V19"></path>
+                                    <path
+                                        d="M21.3518 9H2.64822C2.29022 9 2 8.70651 2 8.34447C2 8.12259 2.11099 7.91577 2.29495 7.79485L8.73007 3.56485C10.3171 2.52162 11.1107 2 12 2C12.8893 2 13.6829 2.52162 15.2699 3.56485L21.7051 7.79485C21.889 7.91577 22 8.12259 22 8.34447C22 8.70651 21.7098 9 21.3518 9Z">
+                                    </path>
+                                    <path
+                                        d="M21.0397 20.2929L20.3519 19.5858C20.0707 19.2968 19.9301 19.1522 19.7514 19.0761C19.5726 19 19.3738 19 18.9762 19H5.02382C4.62621 19 4.4274 19 4.24863 19.0761C4.06987 19.1522 3.92929 19.2968 3.64814 19.5858L2.9603 20.2929C2.25356 21.0194 1.9002 21.3827 2.02456 21.6913C2.14893 22 2.64867 22 3.64814 22H20.3519C21.3513 22 21.8511 22 21.9754 21.6913C22.0998 21.3827 21.7464 21.0194 21.0397 20.2929Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="second">
+                                <h3>current balance</h3>
+                                <div class="money currentbalance">$0.00</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="svg graphupsvg" style="background-color: #DCFCE7;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28"
+                                    color="#166751" fill="none" stroke="#166751" stroke-width="2"
+                                    stroke-linecap="round">
+                                    <path
+                                        d="M21 21H10C6.70017 21 5.05025 21 4.02513 19.9749C3 18.9497 3 17.2998 3 14V3">
+                                    </path>
+                                    <path d="M13 10L13 21" stroke-linejoin="round"></path>
+                                    <path d="M18 13L18 21" stroke-linejoin="round"></path>
+                                    <path d="M8 13L8 20" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M21 7.98693C19.16 7.98693 17.1922 8.24252 15.8771 6.49346C14.3798 4.50218 11.6202 4.50218 10.1229 6.49346C8.80782 8.24252 6.84003 7.98693 5 7.98693H3"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="second">
+                                <h3>Total Income</h3>
+                                <div class="money totalincome" style="color: #166534;">$0.00</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="svg graphdownsvg" style="background-color: #FEE2E2;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28"
+                                    color="#991b1b" fill="none" stroke="#991b1b" stroke-width="2"
+                                    stroke-linecap="round">
+                                    <path
+                                        d="M21 21H10C6.70017 21 5.05025 21 4.02513 19.9749C3 18.9497 3 17.2998 3 14V3">
+                                    </path>
+                                    <path
+                                        d="M6.99707 5.99902C10.5286 5.999 17.9122 7.46328 17.6979 16.5654M15.4886 14.955L17.3721 16.8519C17.5656 17.0468 17.8798 17.0482 18.0751 16.8552L19.9971 14.955"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="second">
+                                <h3>Total Expense</h3>
+                                <div class="money totalexpense" style="color: #991B21;">$0.00</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="svg piggysvg" style="background-color: #DBEAFE;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28"
+                                    color="#1e40af" fill="none" stroke="#1e40af" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M14.5 5.5H10.5C6.91015 5.5 4 8.41015 4 12C4 14.3012 5.19584 16.3231 7 17.4782L7.28751 19.2158C7.35758 19.6393 7.39262 19.851 7.4905 20.0143C7.6037 20.2031 7.77604 20.3492 7.98078 20.4301C8.1578 20.5 8.37243 20.5 8.80169 20.5C9.19947 20.5 9.39836 20.5 9.56635 20.4378C9.76071 20.3659 9.92792 20.2353 10.0449 20.0642C10.1459 19.9163 10.1942 19.7234 10.2906 19.3375L10.5 18.5H13.5L13.7094 19.3375C13.8058 19.7234 13.8541 19.9163 13.9551 20.0642C14.0721 20.2353 14.2393 20.3659 14.4337 20.4378C14.6016 20.5 14.8005 20.5 15.1983 20.5C15.6276 20.5 15.8422 20.5 16.0192 20.4301C16.224 20.3492 16.3963 20.2031 16.5095 20.0143C16.6074 19.851 16.6424 19.6393 16.7125 19.2158L17 17.4782C18.1096 16.7678 18.9891 15.7295 19.5018 14.5L20.3925 14.3217C21.162 14.1677 21.5468 14.0907 21.7734 13.8142C22 13.5378 22 13.1454 22 12.3606V12.0616C22 11.3116 22 10.9366 21.7882 10.6654C21.5764 10.3941 21.2126 10.3032 20.4851 10.1213L20 10C20 8.5 18.8333 7.16667 18 6.5V3.5H17.7361C16.3657 3.5 15.1129 4.27427 14.5 5.5Z">
+                                    </path>
+                                    <path
+                                        d="M15.875 9.75H15.75M16 9.75C16 9.88807 15.8881 10 15.75 10C15.6119 10 15.5 9.88807 15.5 9.75C15.5 9.61193 15.6119 9.5 15.75 9.5C15.8881 9.5 16 9.61193 16 9.75Z">
+                                    </path>
+                                    <path d="M2 8V10C2 11.1046 2.89543 12 4 12"></path>
+                                </svg>
+                            </div>
+                            <div class="second">
+                                <h3>Total Transaction</h3>
+                                <div class="money transaction">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="belowcardsection">
+                    <div class="datachartsection">
+                        <div class="chartbox">
+                            <h1>Cash Flow Analysis</h1>
+                            <div class="mainchart">
+                                <canvas id="cashFlowChart"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="themechangesection">
+                        <div class="title">
+                            <h2>Prefrences</h2>
+                        </div>
+
+                        <div class="modesection">
+                            <h3>Dark Mode</h3>
+
+                            <label class="switch">
+                                <input type="checkbox" id="darkMode">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="resetdatasection">
+                            <button>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                    color="#991b1b" fill="none" stroke="#991b1b" stroke-width="2"
+                                    stroke-linecap="round">
+                                    <path
+                                        d="M19.5 5.5L18.8803 15.5251C18.7219 18.0864 18.6428 19.3671 18.0008 20.2879C17.6833 20.7431 17.2747 21.1273 16.8007 21.416C15.8421 22 14.559 22 11.9927 22C9.42312 22 8.1383 22 7.17905 21.4149C6.7048 21.1257 6.296 20.7408 5.97868 20.2848C5.33688 19.3626 5.25945 18.0801 5.10461 15.5152L4.5 5.5">
+                                    </path>
+                                    <path
+                                        d="M3 5.5H21M16.0557 5.5L15.3731 4.09173C14.9196 3.15626 14.6928 2.68852 14.3017 2.39681C14.215 2.3321 14.1231 2.27454 14.027 2.2247C13.5939 2 13.0741 2 12.0345 2C10.9688 2 10.436 2 9.99568 2.23412C9.8981 2.28601 9.80498 2.3459 9.71729 2.41317C9.32164 2.7167 9.10063 3.20155 8.65861 4.17126L8.05292 5.5">
+                                    </path>
+                                    <path d="M9.5 16.5L9.5 10.5"></path>
+                                    <path d="M14.5 16.5L14.5 10.5"></path>
+                                </svg>
+
+                                Reset All Data
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="alltransactioninterface">
+                <div class="maininterface">
+                    <header>
+                        <nav class="transactionnav">
+                            <h1>All Transactions</h1>
+                        </nav>
+                    </header>
+
+                    <div class="heading">
+                        <h2>DATE</h2>
+                        <h2>DESCRIPTION</h2>
+                        <h2>CATEGORY</h2>
+                        <h2>AMOUNT</h2>
+                        <h2>ACTIONS</h2>
+                    </div>
+
+                    <div class="transactionlist">
+                        <div class="transaction">
+                            <h3>2025-07-15</h3>
+                            <h3>SALARY</h3>
+                            <h3>SHOOPING</h3>
+                            <h3>10000</h3>
+                            <h3><svg class="deletetransactionbtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="30"
+                                    color="#991b1b" fill="none" stroke="#991b1b" stroke-width="2"
+                                    stroke-linecap="round">
+                                    <path
+                                        d="M19.5 5.5L18.8803 15.5251C18.7219 18.0864 18.6428 19.3671 18.0008 20.2879C17.6833 20.7431 17.2747 21.1273 16.8007 21.416C15.8421 22 14.559 22 11.9927 22C9.42312 22 8.1383 22 7.17905 21.4149C6.7048 21.1257 6.296 20.7408 5.97868 20.2848C5.33688 19.3626 5.25945 18.0801 5.10461 15.5152L4.5 5.5">
+                                    </path>
+                                    <path
+                                        d="M3 5.5H21M16.0557 5.5L15.3731 4.09173C14.9196 3.15626 14.6928 2.68852 14.3017 2.39681C14.215 2.3321 14.1231 2.27454 14.027 2.2247C13.5939 2 13.0741 2 12.0345 2C10.9688 2 10.436 2 9.99568 2.23412C9.8981 2.28601 9.80498 2.3459 9.71729 2.41317C9.32164 2.7167 9.10063 3.20155 8.65861 4.17126L8.05292 5.5">
+                                    </path>
+                                </svg></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settingsection">
+                <header>
+                    <nav class="settingnav">
+                        <h1>Settings</h1>
+                        <h3>Manage your account profile and app formatting.</h3>
+                    </nav>
+                </header>
+
+                <div class="mainsetting">
+                    <div class="details">
+                        <h2>Profile Details</h2>
+                    </div>
+
+                    <form action="">
+                        <div class="inputs">
+                            <div class="fulname">
+                                <label for="">Full Name</label>
+                                <input class="changenameinput" type="text">
+                            </div>
+                        </div>
+
+                        <div class="end">
+                            <button class="savechange">Save changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="loginregister.js"></script>
+    <script src="main.js"></script>
+    <script src="summary.js"></script>
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>>
