@@ -54,7 +54,7 @@ main {
 .registerbox , .loginbox {
     width: 100%;
     max-width: 430px;
-    background: white;
+    background: var(--white-bg-color);
     padding: 40px;
     display: flex;
     flex-direction: column;

@@ -134,3 +134,21 @@ transactionList.addEventListener("click", function (e) {
 
 });
 
+let resetBtn = document.querySelector('.resetdatasection button')
+resetBtn.addEventListener('click', function(){
+
+    let confirmReset = confirm("Are you sure you want to delete all transactions?");
+
+    if(!confirmReset){
+        return;
+    }
+
+    transactionsArr = [];
+    localStorage.removeItem('transaction');
+
+    updateTransactions();
+    updateTransactionList();
+    updateSummary();
+    updateChart();
+
+});
