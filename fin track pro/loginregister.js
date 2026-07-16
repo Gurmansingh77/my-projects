@@ -31,6 +31,13 @@ function showMainsection() {
 }
 showMainsection()
 
+let registerHereBtn = document.querySelector('.registerherebtn')
+registerHereBtn.addEventListener('click' , function(){
+        loginSection.style.display = 'none'
+        registerSection.style.display = 'flex'
+
+})
+
 let registerForm = document.querySelector('.registerform')
 let usernameInput = document.querySelector('.usenameinput')
 let passwordInput = document.querySelector('.passwordinput')
