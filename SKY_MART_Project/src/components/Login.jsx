@@ -21,6 +21,7 @@ const Login = ({ setIsloggedIn }) => {
     ) {
       console.log("login done");
       localStorage.setItem('loginData' , JSON.stringify(data))
+      setIsloggedIn(true)
     }else{
         alert('Login Failed')
         return
@@ -139,12 +140,14 @@ useEffect(() => {
             </button>
           </form>
 
-          <p className="text-center text-gray-500 mt-8">
+          {/* <p className="text-center text-gray-500 mt-8">
             Don't have an account?{" "}
-            <span className="text-lime-400 font-semibold cursor-pointer hover:text-lime-300">
+            <span
+            onClick={() => setIsloggedIn(false)}
+             className="text-lime-400 font-semibold cursor-pointer hover:text-lime-300">
               Create one
             </span>
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

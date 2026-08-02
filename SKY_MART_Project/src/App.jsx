@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router";
 import axios from "axios";
 
 import Home from "./components/Home";
@@ -7,23 +7,34 @@ import Shop from "./components/Shop";
 import About from "./components/About";
 import Cart from "./components/Cart";
 import Nav from "./components/Nav";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 const App = () => {
   const [products, setProducts] = useState([]);
   const [isCartOpen, setisCartOpen] = useState(false);
 
+  const [isReggisterd, setIsReggisterd] = useState(() => {
+    return !!localStorage.getItem("RegisterUserData");
+  });
+
+  const [isloggedIn, setIsloggedIn] = useState(() => {
+    return !!localStorage.getItem("loginData");
+  });
+
   const [cartitems, setCartitems] = useState(() => {
     return JSON.parse(localStorage.getItem("cartProducts")) || [];
   });
+
   useEffect(() => {
     localStorage.setItem("cartProducts", JSON.stringify(cartitems));
   }, [cartitems]);
 
   const totalPrice = cartitems.reduce((sum, item) => {
-    return sum + (item.price * item.quantity);
+    return sum + item.price * (item.quantity || 1);
   }, 0);
 
-  let total = totalPrice.toFixed(2);
+  const total = totalPrice.toFixed(2);
 
   const getProducts = async () => {
     try {
@@ -39,8 +50,16 @@ const App = () => {
   }, []);
 
   const localStorageRegisterdUserData = JSON.parse(
-    localStorage.getItem("RegisterUserData"),
+    localStorage.getItem("RegisterUserData")
   );
+
+  if (!isReggisterd) {
+    return <Register setIsReggisterd={setIsReggisterd} />;
+  }
+
+  if (!isloggedIn) {
+    return <Login setIsloggedIn={setIsloggedIn} />;
+  }
 
   return (
     <>
@@ -72,7 +91,13 @@ const App = () => {
 
         <Route
           path="/shop"
-          element={<Shop products={products} setCartitems={setCartitems} cartitems={cartitems} />}
+          element={
+            <Shop
+              products={products}
+              cartitems={cartitems}
+              setCartitems={setCartitems}
+            />
+          }
         />
 
         <Route path="/about" element={<About />} />

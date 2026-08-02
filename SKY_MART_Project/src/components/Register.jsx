@@ -182,12 +182,12 @@ const Register = ({ setIsReggisterd }) => {
               </button>
             </div>
 
-            <p className="text-center text-gray-400 mt-8">
+            {/* <p className="text-center text-gray-400 mt-8">
               Already have an account?{" "}
               <span className="text-lime-400 font-semibold cursor-pointer">
                 Sign in
               </span>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
