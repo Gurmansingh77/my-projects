@@ -1,0 +1,407 @@
+@media(max-width:1200px){
+
+.datacards{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.belowcardsection{
+    flex-direction:column;
+}
+
+.datachartsection,
+.themechangesection{
+    width:100%;
+}
+
+.mainsetting{
+    max-width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.left{
+    width:80px;
+}
+
+.nav{
+    margin-left:80px;
+    width:calc(100% - 80px);
+}
+
+.centersection,
+.settingsection{
+    margin-left:80px;
+}
+
+.finname,
+.options button{
+    font-size:0;
+}
+
+.options button svg{
+    margin:0;
+}
+
+.transactionbtn span{
+    display:none;
+}
+
+.datacards{
+    grid-template-columns:1fr;
+}
+
+.inputs{
+    flex-direction:column;
+}
+
+.right{
+    gap:10px;
+}
+
+.username{
+    display:none;
+}
+
+}
+
+@media(max-width:500px){
+
+.left{
+    width:100%;
+    height:70px;
+    top:auto;
+    bottom:0;
+}
+
+.left aside{
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.sitename{
+    display:none;
+}
+
+.options{
+    flex-direction:row;
+    padding:0;
+    gap:5px;
+    height:auto;
+}
+
+.addtransaction{
+    display:none;
+}
+
+.nav{
+    margin-left:0;
+    width:100%;
+}
+
+.centersection,
+.settingsection{
+    margin-left:0;
+    padding:15px;
+    padding-bottom:90px;
+}
+
+.right{
+    justify-content:flex-end;
+    width:100%;
+}
+
+.logout{
+    padding:8px 12px;
+}
+
+.belowcardsection{
+    flex-direction:column;
+}
+
+.datachartsection,
+.themechangesection{
+    width:100%;
+}
+
+.title h2{
+    font-size:22px;
+}
+
+.financialover h1{
+    font-size:22px;
+}
+
+.financialover h3{
+    font-size:13px;
+}
+
+.chart-container{
+    padding:10px;
+}
+
+.mainchart{
+    height:250px;
+}
+
+}
+
+@media(max-width:380px){
+
+.logout{
+    font-size:12px;
+}
+
+.card{
+    padding:15px;
+}
+
+.money{
+    font-size:20px !important;
+}
+
+.transactionbtn{
+    display:none;
+}
+
+}
+
+@media (max-height:900px){
+
+.left{
+    overflow-y:auto;
+}
+
+.options{
+    gap:12px;
+    padding:10px;
+}
+
+.options button{
+    padding:8px 10px;
+    font-size:16px;
+}
+
+.fintrachlogo img{
+    width:42px;
+    height:50px;
+}
+
+.transactionbtn{
+    padding:10px 18px;
+    font-size:14px;
+}
+
+.mainchart{
+    height:300px;
+}
+
+}
+
+@media (max-height:800px){
+
+.left aside{
+    padding:10px;
+}
+
+.sitename{
+    padding-bottom:10px;
+}
+
+.options{
+    gap:8px;
+}
+
+.options button{
+    padding:7px;
+    font-size:15px;
+}
+
+.datasection{
+    padding:0;
+}
+
+.mainchart{
+    height:260px;
+}
+
+.themechangesection{
+    padding:15px;
+}
+
+.title h2{
+    font-size:22px;
+}
+
+}
+
+@media (max-height:700px){
+
+.left{
+    overflow-y:auto;
+}
+
+.options{
+    gap:5px;
+}
+
+.options button{
+    padding:6px;
+    font-size:14px;
+}
+
+.fintrachlogo img{
+    width:35px;
+    height:42px;
+}
+
+.finname h2{
+    font-size:16px;
+}
+
+.finname h3{
+    font-size:12px;
+}
+
+.transactionbtn{
+    padding:8px 12px;
+    font-size:13px;
+}
+
+.mainchart{
+    height:220px;
+}
+
+}
+
+@media (max-height:600px){
+
+.left{
+    overflow-y:auto;
+}
+
+.left::-webkit-scrollbar{
+    width:5px;
+}
+
+.options{
+    gap:2px;
+}
+
+.options button{
+    padding:5px;
+}
+
+.mainchart{
+    height:180px;
+}
+
+.financialover h1{
+    font-size:22px;
+}
+
+.financialover h3{
+    font-size:13px;
+}
+
+}
+
+@media (max-width:1200px){
+    .left{
+        width:220px;
+    }
+    nav,
+    .centersection{
+        margin-left:220px;
+        width:calc(100% - 220px);
+    }
+}
+
+@media (max-width:768px){
+    .left{
+
+        width:80px;
+    }
+    .finname,
+    .options button span,
+    .transactionbtn span{
+        display:none;
+    }
+    .options button,
+    .transactionbtn{
+        justify-content:center;
+        padding:12px;
+    }
+    nav,
+    .centersection{
+        margin-left:80px;
+        width:calc(100% - 80px);
+    }
+    .right{
+        gap:15px;
+        padding:0 15px;
+    }
+}
+
+@media (max-width:500px){
+    .left{
+        position:fixed;
+        bottom:0;
+        top:auto;
+        width:100%;
+        height:70px;
+    }
+    .left aside{
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .sitename{
+        display:none;
+    }
+    .options{
+        flex-direction:row;
+        height:auto;
+        padding:0;
+        gap:10px;
+    }
+    .addtransaction{
+        padding:0;
+    }
+    nav{
+        margin-left:0;
+        width:100%;
+    }
+    .centersection{
+        margin-left:0;
+        width:100%;
+        padding-bottom:80px;
+    }
+    .username{
+        display:none;
+    }
+}
+
+@media (max-width: 600px){
+
+    .transactionbox{
+        width: 95%;
+        padding: 18px;
+    }
+
+    .thirdsection{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .save{
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    .boxtop h2{
+        font-size: 22px;
+    }
+}

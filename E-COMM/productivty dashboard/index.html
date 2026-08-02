@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <div class="firstview">
+            <div class="register">
+                <h2>What's your good name</h2>
+                <form action="">
+                    <input type="text" class="nameinput" placeholder="Your name...">
+                    <button class="continuebtn">Continue</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="aftertaskclickinterface">
+
+            <div class="box maintrayboxes">
+                <div class="headline">
+                    <h2>Task</h2>
+                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                        color="#000000" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085"></path>
+                    </svg>
+                </div>
+
+                <div class="mainbox">
+                    <form class="taskform" action="">
+
+                        <input class="taskinput" type="text" placeholder="Add a task">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z">
+                                </path>
+                                <path d="M12 8V16M16 12H8"></path>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <div class="listtray">
+                        <button class="alltask">All</button>
+                        <button class="activebtn">Active</button>
+                        <button class="completedbtn">Completed</button>
+                    </div>
+
+                    <div class="tasklist">
+                        <div class="title">Task List</div>
+                        <div class="tasksection">
+
+                            <!-- <div class="tasks">
+                                <h2 class="tasktitle" style="font-size: small; font-weight: normal; "></h2>
+                                <div class="btns">
+                                    <button>done</button>
+                                    <button>delete</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="afterplannerclickinterface">
+            <div class="plannerbox maintrayboxes ">
+
+                <div class="topline">
+                    <h2>Planner</h2>
+                    <svg class="plannercross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                        height="30" color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085"></path>
+                    </svg>
+                </div>
+
+                <div class="mainplanner">
+                    <form class="plannerform" action="">
+                        <input class="timepicker" type="time">
+                        <input class="eventinput" type="text" placeholder="Type your event...">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z">
+                                </path>
+                                <path d="M12 8V16M16 12H8"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="eventlist">
+                    <div class="event">
+                        <!-- <div class="eventtime">1:22AM</div>
+                        <div class="eventname">BIRTHDAY</div>
+                        <div class="delevent">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                height="20" color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085"></path>
+                            </svg>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="aftergoalclickinterface">
+            <div class="goalbox maintrayboxes ">
+
+                <div class="goalheadline">
+                    <h2 >Goals</h2>
+                    <div class="closegoals">
+                        <svg class="plannercross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                            height="30" color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="maingoal">
+                    <form class="goalform" action="">
+
+                        <input class="goalinput" type="text" placeholder="Add a goal">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z">
+                                </path>
+                                <path d="M12 8V16M16 12H8"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="goalarea">
+                    <!-- <div class="goalslist">
+                        <div class="goaltext">
+                            <h2>goal</h2>
+                        </div>
+                        <div class="delgoal">
+                            <svg class="plannercross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                                height="30" color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085"></path>
+                            </svg>
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <footer class="goalfooter">
+                    <h4 style="font-size: 14px; font-weight: normal; opacity: 0.8; ">Total Goals - </h4>
+                </footer>
+            </div>
+        </div>
+
+        <div class="afterpomodoroclickinterface">
+            <div class="mainpomobox">
+
+                <div class="topline">
+                    <h2>Pomodoro</h2>
+                    <div class=" closepomo">
+                        <svg class="plannercross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                            height="30" color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mainpomo" style="padding: 10px 100px;">
+                    <div class="timer" style="font-size: 40px;">25:00</div>
+                    <div class="pomobtns">
+                        <div class="pause">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="80"
+                                height="80" color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 2V22"></path>
+                                <path
+                                    d="M7 7.5V16.497C7 16.9617 7 17.194 7.03843 17.3872C7.19624 18.1806 7.81644 18.8008 8.60982 18.9586C8.80302 18.997 9.03534 18.997 9.5 18.997C9.96466 18.997 10.197 18.997 10.3902 18.9586C11.1836 18.8008 11.8038 18.1806 11.9616 17.3872C12 17.194 12 16.9617 12 16.497V7.5C12 7.03534 12 6.80302 11.9616 6.60982C11.8038 5.81644 11.1836 5.19624 10.3902 5.03843C10.197 5 9.96466 5 9.5 5C9.03534 5 8.80302 5 8.60982 5.03843C7.81644 5.19624 7.19624 5.81644 7.03843 6.60982C7 6.80302 7 7.03534 7 7.5Z">
+                                </path>
+                                <path
+                                    d="M16 10.5V13.497C16 13.9617 16 14.194 16.0384 14.3872C16.1962 15.1806 16.8164 15.8008 17.6098 15.9586C17.803 15.997 18.0353 15.997 18.5 15.997C18.9647 15.997 19.197 15.997 19.3902 15.9586C20.1836 15.8008 20.8038 15.1806 20.9616 14.3872C21 14.194 21 13.9617 21 13.497V10.5C21 10.0353 21 9.80302 20.9616 9.60982C20.8038 8.81644 20.1836 8.19624 19.3902 8.03843C19.197 8 18.9647 8 18.5 8C18.0353 8 17.803 8 17.6098 8.03843C16.8164 8.19624 16.1962 8.81644 16.0384 9.60982C16 9.80302 16 10.0353 16 10.5Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="reset"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="80"
+                                height="80" color="#000000" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18.0117 7.48959L19.5013 6"></path>
+                                <path
+                                    d="M5.51903 19C7.07817 20.8354 9.40308 22 12 22C16.6944 22 20.5 18.1944 20.5 13.5C20.5 8.80558 16.6944 5 12 5C7.30558 5 3.5 8.80558 3.5 13.5C3.5 14.0118 3.54524 14.5131 3.63193 15">
+                                </path>
+                                <path d="M14.5 2H9.5"></path>
+                                <path d="M12 13.5L15.5 10"></path>
+                                <path
+                                    d="M8.5 18.2213C8.5 18.2213 5.21917 17.7234 4.72128 18.2213C4.22339 18.7192 4.72129 22 4.72129 22">
+                                </path>
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="maincontent">
+
+
+            <header>
+                <nav>
+                    <div class="left">
+                        <div>Productivity Dashboard</div>
+                    </div>
+
+                    <div class="right">
+                        <button class="id">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                color="#000000" fill="none" stroke="currentColor" stroke-width="1">
+                                <path
+                                    d="M16.3083 4.38394C15.7173 4.38394 15.4217 4.38394 15.1525 4.28405C15.1151 4.27017 15.0783 4.25491 15.042 4.23828C14.781 4.11855 14.5721 3.90959 14.1541 3.49167C13.1922 2.52977 12.7113 2.04882 12.1195 2.00447C12.04 1.99851 11.96 1.99851 11.8805 2.00447C11.2887 2.04882 10.8077 2.52977 9.84585 3.49166C9.42793 3.90959 9.21897 4.11855 8.95797 4.23828C8.92172 4.25491 8.88486 4.27017 8.84747 4.28405C8.57825 4.38394 8.28273 4.38394 7.69171 4.38394H7.58269C6.07478 4.38394 5.32083 4.38394 4.85239 4.85239C4.38394 5.32083 4.38394 6.07478 4.38394 7.58269V7.69171C4.38394 8.28273 4.38394 8.57825 4.28405 8.84747C4.27017 8.88486 4.25491 8.92172 4.23828 8.95797C4.11855 9.21897 3.90959 9.42793 3.49166 9.84585C2.52977 10.8077 2.04882 11.2887 2.00447 11.8805C1.99851 11.96 1.99851 12.04 2.00447 12.1195C2.04882 12.7113 2.52977 13.1922 3.49166 14.1541C3.90959 14.5721 4.11855 14.781 4.23828 15.042C4.25491 15.0783 4.27017 15.1151 4.28405 15.1525C4.38394 15.4217 4.38394 15.7173 4.38394 16.3083V16.4173C4.38394 17.9252 4.38394 18.6792 4.85239 19.1476C5.32083 19.6161 6.07478 19.6161 7.58269 19.6161H7.69171C8.28273 19.6161 8.57825 19.6161 8.84747 19.7159C8.88486 19.7298 8.92172 19.7451 8.95797 19.7617C9.21897 19.8815 9.42793 20.0904 9.84585 20.5083C10.8077 21.4702 11.2887 21.9512 11.8805 21.9955C11.96 22.0015 12.04 22.0015 12.1195 21.9955C12.7113 21.9512 13.1922 21.4702 14.1541 20.5083C14.5721 20.0904 14.781 19.8815 15.042 19.7617C15.0783 19.7451 15.1151 19.7298 15.1525 19.7159C15.4217 19.6161 15.7173 19.6161 16.3083 19.6161H16.4173C17.9252 19.6161 18.6792 19.6161 19.1476 19.1476C19.6161 18.6792 19.6161 17.9252 19.6161 16.4173V16.3083C19.6161 15.7173 19.6161 15.4217 19.7159 15.1525C19.7298 15.1151 19.7451 15.0783 19.7617 15.042C19.8815 14.781 20.0904 14.5721 20.5083 14.1541C21.4702 13.1922 21.9512 12.7113 21.9955 12.1195C22.0015 12.04 22.0015 11.96 21.9955 11.8805C21.9512 11.2887 21.4702 10.8077 20.5083 9.84585C20.0904 9.42793 19.8815 9.21897 19.7617 8.95797C19.7451 8.92172 19.7298 8.88486 19.7159 8.84747C19.6161 8.57825 19.6161 8.28273 19.6161 7.69171V7.58269C19.6161 6.07478 19.6161 5.32083 19.1476 4.85239C18.6792 4.38394 17.9252 4.38394 16.4173 4.38394H16.3083Z">
+                                </path>
+                                <path
+                                    d="M8.5 16.5C9.19863 15.2923 10.5044 14.4797 12 14.4797C13.4956 14.4797 14.8014 15.2923 15.5 16.5M14 10C14 11.1046 13.1046 12 12 12C10.8955 12 10 11.1046 10 10C10 8.89544 10.8955 8.00001 12 8.00001C13.1046 8.00001 14 8.89544 14 10Z"
+                                    stroke-linecap="round"></path>
+                            </svg>
+                        </button>
+
+                        <!-- <button class="themebtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                color="#000000" fill="none" stroke="currentColor" stroke-width="1">
+                                <path
+                                    d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z">
+                                </path>
+                                <path
+                                    d="M12 2C11.6227 2.33333 11.0945 3.2 12 4M12 20C12.3773 20.3333 12.9055 21.2 12 22M19.5 4.50271C18.9685 4.46982 17.9253 4.72293 18.0042 5.99847M5.49576 17.5C5.52865 18.0315 5.27555 19.0747 4 18.9958M5.00271 4.5C4.96979 5.03202 5.22315 6.0763 6.5 5.99729M18 17.5026C18.5315 17.4715 19.5747 17.7108 19.4958 18.9168M22 12C21.6667 11.6227 20.8 11.0945 20 12M4 11.5C3.66667 11.8773 2.8 12.4055 2 11.5"
+                                    stroke-linecap="round"></path>
+                            </svg>
+
+                            <span>Theme</span>
+                        </button> -->
+                    </div>
+                </nav>
+            </header>
+
+            <div class="quotesection">
+                <div class="mainquote">
+                    <div class="quote"
+                        style=" font-family: Playfair Display ; font-size: large; text-transform: capitalize;"></div>
+                    <div class="author" style="  font-family: Playfair Display; font-size: 14px; opacity: 0.6;"></div>
+                </div>
+            </div>
+
+            <div class="centersection">
+
+                <div class="greet" style="display: flex; flex-direction: column; align-items: center;">
+                    <h1 class="hello" style="font-size: 30px;"></h1>
+                    <h3 class="greetingtext" style="font-size: 14px ; opacity: 0.6;"></h3>
+                </div>
+
+                <div class="currenttime">
+                    <div class="time">
+                        <h1>9:00:12<sup>PM</sup></h1>
+                    </div>
+                    <div class="otherinfo">
+                        <div class="day"></div>
+                        <div class="date"></div>
+                        <div class="temp"></div>
+                        <div class="skycondition"></div>
+                    </div>
+                </div>
+
+                <div class="tray ">
+
+                    <div class="task trayitems">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                            color="#000000" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M13.498 2H8.49805C7.66962 2 6.99805 2.67157 6.99805 3.5C6.99805 4.32843 7.66962 5 8.49805 5H13.498C14.3265 5 14.998 4.32843 14.998 3.5C14.998 2.67157 14.3265 2 13.498 2Z">
+                            </path>
+                            <path d="M6.99805 15H10.4266M6.99805 11H14.998"></path>
+                            <path
+                                d="M18.9981 13.5V9.48263C18.9981 6.65424 18.9981 5.24004 18.1194 4.36137C17.4781 3.72007 16.5515 3.54681 14.9981 3.5M11.998 21.9995L8.99805 21.9995C6.16963 21.9995 4.75541 21.9995 3.87674 21.1208C2.99806 20.2421 2.99805 18.8279 2.99805 15.9995L2.99806 9.48269C2.99805 6.65425 2.99805 5.24004 3.87673 4.36136C4.51802 3.72007 5.44456 3.54681 6.99795 3.5">
+                            </path>
+                            <path d="M13.998 20C13.998 20 14.998 20 15.998 22C15.998 22 18.1745 17 20.998 16"></path>
+                        </svg>
+
+                        <span>Task</span>
+                    </div>
+                    <div class="planner trayitems">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                            color="#000000" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M16 2V6M8 2V6"></path>
+                            <path
+                                d="M13 4H11C7.22876 4 5.34315 4 4.17157 5.17157C3 6.34315 3 8.22876 3 12V14C3 17.7712 3 19.6569 4.17157 20.8284C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8284C21 19.6569 21 17.7712 21 14V12C21 8.22876 21 6.34315 19.8284 5.17157C18.6569 4 16.7712 4 13 4Z">
+                            </path>
+                            <path d="M3 10H21"></path>
+                            <path d="M11 14H16M8 14H8.00898M13 18H8M16 18H15.991"></path>
+                        </svg>
+
+                        <span>Planner</span>
+                    </div>
+                    <div class="goal trayitems">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                            color="#000000" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M11 7.10156C8.71776 7.56483 7 9.58259 7 12.0015C7 14.763 9.23858 17.0015 12 17.0015C14.419 17.0015 16.4367 15.2838 16.9 13.0015">
+                            </path>
+                            <path
+                                d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2">
+                            </path>
+                            <path
+                                d="M14.5 7.11525V9.5H16.8847C17.7168 9.5 18.1328 9.5 18.5068 9.34506C18.8809 9.19011 19.1751 8.89595 19.7634 8.30762L20.0977 7.97337C21.0515 7.01951 21.5284 6.54258 21.4987 6.0829C21.4874 5.90785 21.431 5.73869 21.335 5.59185C21.083 5.20626 20.4153 5.11087 19.0799 4.9201C18.8891 3.5847 18.7937 2.917 18.4081 2.665C18.2613 2.56903 18.0922 2.51264 17.9171 2.50131C17.4574 2.47156 16.9805 2.94849 16.0266 3.90235L15.6924 4.2366C15.1041 4.82493 14.8099 5.11909 14.6549 5.49316C14.5 5.86723 14.5 6.28323 14.5 7.11525Z">
+                            </path>
+                            <path d="M14.5 9.5L12 12"></path>
+                        </svg>
+
+                        <span>Goals</span>
+                    </div>
+                    <div class="pomodoro trayitems">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                            color="#000000" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M15 2H10"></path>
+                            <path
+                                d="M4 13.5C4 8.80558 7.80558 5 12.5 5C14.8472 5 16.9722 5.95139 18.5104 7.48959M18.5104 7.48959C20.0486 9.02779 21 11.1528 21 13.5C21 18.1944 17.1944 22 12.5 22H3M18.5104 7.48959L20 6">
+                            </path>
+                            <path d="M8 19H3"></path>
+                            <path d="M6 16H3"></path>
+                            <path d="M12.5 13.5L16 10"></path>
+                        </svg>
+
+                        <span>Pomodoro</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="id.js"></script>
+    <script src="pomo.js"></script>
+    <script src="goals.js"></script>
+    <script src="planner.js"></script>
+    <script src="task.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>>>

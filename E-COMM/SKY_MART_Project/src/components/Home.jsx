@@ -158,7 +158,7 @@ const Home = ({ localStorageRegisterdUserData , product , cartitems , total }) =
           </div>
         </div>
         {/* Categories */}
-        {/* <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-4">
           <h3 className="text-xl font-bold">Shop by category</h3>
           <button className="text-lime-400 text-sm flex items-center gap-1">
             View all
@@ -179,9 +179,9 @@ const Home = ({ localStorageRegisterdUserData , product , cartitems , total }) =
               </div>
             );
           })}
-        </div> */}
+        </div>
         {/* Product sections */}
-        {/* <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
           <div className="bg-[#0B0B0B] border border-gray-800 rounded-3xl p-6">
             <div className="flex items-center justify-between mb-5">
               <h3 className="font-bold flex items-center gap-2">
@@ -211,7 +211,7 @@ const Home = ({ localStorageRegisterdUserData , product , cartitems , total }) =
               ))}
             </div>
           </div>
-        </div> */}
+        </div>
         {/* Features */}
         <div className="grid md:grid-cols-3 gap-4 mb-10">
           <div className="bg-[#0B0B0B] border border-gray-800 rounded-2xl p-5 flex items-center gap-4">
